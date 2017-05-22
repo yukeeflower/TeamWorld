@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -26,6 +27,8 @@ import java.util.Map;
 
 @SuppressLint("ValidFragment")
 public class FirstFragment extends Fragment {
+    private ImageButton morebutton;
+    private ImageButton messagebutton;
     private String context;
     private ListView listView;
     private ImageView imageView;
@@ -90,6 +93,24 @@ public class FirstFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+
+        messagebutton=(ImageButton)getActivity().findViewById(R.id.home_message);
+        messagebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getActivity(),MessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        morebutton=(ImageButton)getActivity().findViewById(R.id.home_more);
+        morebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getActivity(),MyActivity.class);
+                startActivity(intent);
+            }
+        });
         List<Map<String, Object>> list = new ArrayList<>();
         for (int i = modelList.size()-1; i >-1; i--) {
             Map<String, Object> map = new HashMap<>();

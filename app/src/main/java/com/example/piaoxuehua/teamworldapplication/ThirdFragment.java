@@ -19,6 +19,7 @@ import android.widget.TextView;
 public class ThirdFragment extends Fragment {
     private String context;
     private TextView mTextView;
+    private ImageButton buttonzudui;
 
     public  ThirdFragment(String context){
         this.context = context;
@@ -38,10 +39,10 @@ public class ThirdFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        ImageButton imageButton=(ImageButton)getActivity().findViewById(R.id.more_zudui);
+        ImageButton buttonzudui=(ImageButton)getActivity().findViewById(R.id.more_zudui);
 //        Intent intent =new Intent(getActivity(),JoinActivity.class);
 //        startActivity(intent);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        buttonzudui.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(getActivity(),JoinActivity.class);

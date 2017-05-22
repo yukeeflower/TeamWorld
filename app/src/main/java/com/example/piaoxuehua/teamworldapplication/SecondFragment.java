@@ -26,69 +26,19 @@ import java.util.Map;
 @SuppressLint("ValidFragment")
 public class SecondFragment extends Fragment {
     private String context;
-    private TextView textView;
+    private TextView mTextView;
 
-    String[]from={ "userimages","usernames","moneys","questions","answers","guanzhu","pinglun_num"};
-    int[] to={R.id.xuanshang_cell_userlogo,R.id.xuanshang_cell_username,R.id.xuanshang_cell_money,R.id.xuanshang_cell_question,R.id.xuanshang_cell_answer,
-    R.id.xuanshang_cell_agree,R.id.xuanshang_cell_pinglun};
-
-    int[] userimages = new int[]{
-            R.drawable.home_cell_logo_user1, R.drawable.home_cell_logo_user2, R.drawable.home_cell_logo_user3,
-            R.drawable.home_cell_logo_user4
-    };
-    String[] usernames = new String[]{
-            "user1", "user2", "user3",
-            "user4"
-    };
-    String[] moneys = new String[]{
-            "10", "30", "10", "50"
-    };
-    String[] questions = new String[]{
-            "question1",
-            "question2",
-            "question3",
-            "question4"
-
-    };
-    String[] answers = new String[]{
-            "answer1",
-            "answer2",
-            "answer3",
-            "answer4"
-
-    };
-    String[] guanzhu = new String[]{
-            "260",
-            "340",
-            "110",
-            "320"
-
-    };
-    String[] pinglun_num = new String[]{
-            "4",
-            "3",
-            "4",
-            "2"
-
-    };
-    ArrayList<HashMap<String,String>> list=null;
-    HashMap<String,String> map=null;
-
-
-    public SecondFragment(String context) {
+    public  SecondFragment(String context){
         this.context = context;
     }
-
-
-    public SecondFragment() {
-    }
-
+    public SecondFragment(){}
+    @Nullable
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.second_fragment,container,false);
+        //mTextView = (TextView)getActivity().findViewById(R.id.txt_content);
 
-    }
-}
+        return view;  }
 }
 
 

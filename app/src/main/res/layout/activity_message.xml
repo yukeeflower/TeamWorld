@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_message"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     tools:context="com.example.piaoxuehua.teamworldapplication.MessageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:id="@+id/my_tab_title"
+        android:id="@+id/message_tab_title"
         android:background="#fff"
         android:orientation="horizontal">
         <ImageButton
@@ -35,13 +43,229 @@
             android:textSize="30dp"
             android:textColor="#3f3f3f"
             />
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray"
+            />
     </RelativeLayout>
+
+
+
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/message_body1"
+        android:layout_below="@+id/message_tab_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ListView
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message_logo_chat"
+            android:layout_margin="10dp"
+            />
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="wrap_content"
+            android:text="未读聊天消息"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+           />
+    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray"
+            android:layout_marginTop="120dp"
+            />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/message_body2"
+        android:layout_below="@+id/message_body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message_logo_friend"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好友添加请求"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/message_body3"
+        android:layout_below="@+id/message_body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message_logo_shortchat"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="临时会话"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="260dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/message_body4"
+        android:layout_below="@+id/message_body3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message_logo_pk"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PK战绩"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="330dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/message_body5"
+        android:layout_below="@+id/message_body4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message_logo_question"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬赏提问结果"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <ImageView
+
+        android:layout_marginTop="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/message_body6"
+        android:layout_below="@+id/message_body5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message_logo_space"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="论坛评论"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <ImageView
+
+        android:layout_marginTop="470dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/message_body7"
+        android:layout_below="@+id/message_body6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message_logo_good"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赞了我的人"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
     </LinearLayout>
 
-</RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
