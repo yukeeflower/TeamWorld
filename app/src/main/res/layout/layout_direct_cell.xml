@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/direct_cell_schoolname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你好"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#999"
+        android:layout_margin="25dp"/>
+
+    <ImageView
+        android:id="@+id/direct_cell_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/direct_cell_icon"
+        android:layout_margin="25dp"/>
+
+    <ImageView
+        android:id="@+id/direct_cell_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        />
+
+</RelativeLayout>

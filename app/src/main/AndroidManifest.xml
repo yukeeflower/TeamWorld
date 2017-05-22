@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.piaoxuehua.teamworldapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity
+            android:name=".IndexActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoadingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".DirectActivity" />
+        <activity android:name=".DemoActivity" />
+        <activity android:name=".HomeActivity" />
+        <!-- <activity android:name=".FirstFragment" /> -->
+        <activity android:name=".JoinActivity" />
+
+        <!-- <receiver android:name=".FirstFragment$MyBroadcastReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="BROADCAST_ACTION" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".MyActivity" />
+        <activity android:name=".My_shezhiActivity" />
+        <activity android:name=".MessageActivity"></activity>
+    </application>
+
+</manifest>

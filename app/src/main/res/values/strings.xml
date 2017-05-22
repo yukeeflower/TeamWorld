@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">"TeamWorld"</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>

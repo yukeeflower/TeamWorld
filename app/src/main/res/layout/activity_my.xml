@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.piaoxuehua.teamworldapplication.MyActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/my_tab_title"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/my_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/my_icon_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="我的"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#3f3f3f"
+            />
+</RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007A89"
+        android:layout_marginTop="67dp"
+        />
+    <RelativeLayout
+        android:id="@+id/my_user_topbody"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="68dp"
+        android:background="#F2F2F2">
+        <ImageView
+            android:id="@+id/my_user_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/my_user_logo"
+            />
+        <TextView
+            android:id="@+id/my_username"
+            android:layout_toRightOf="@+id/my_user_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pxh"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户ID:  21092106"
+            android:layout_toRightOf="@+id/my_user_logo"
+            android:layout_marginTop="55dp"
+            android:textSize="25dp"
+            android:textColor="#000"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/my_icon_go"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007A89"
+        android:layout_marginTop="150dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/my_body_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签名："
+            android:textSize="20dp"
+            android:textColor="#000"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="发表下心情吧..."/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_join_write"
+            android:layout_marginLeft="150dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007A89"
+        android:layout_alignBottom="@+id/my_body_sign"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/my_body_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_body_sign">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱："
+            android:textSize="20dp"
+            android:textColor="#000"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入邮箱..."/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_join_write"
+            android:layout_marginLeft="165dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007A89"
+        android:layout_alignBottom="@+id/my_body_mail"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/my_body_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_body_mail">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别："
+            android:textSize="20dp"
+            android:textColor="#000"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择性别..."/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_join_write"
+            android:layout_marginLeft="165dp"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007A89"
+        android:layout_alignBottom="@+id/my_body_sex"
+        />
+
+
+
+
+    <ImageButton
+        android:id="@+id/my_icon_set"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_icon_set2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/my_icon_set"
+        android:layout_alignParentBottom="true"
+        android:text="设置"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

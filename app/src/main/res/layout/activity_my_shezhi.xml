@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_shezhi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.piaoxuehua.teamworldapplication.My_shezhiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/shezhi_title"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/my_icon_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="设置"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#000"
+            />
+    </RelativeLayout>
+    
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_marginTop="80dp"
+        />
+    <LinearLayout
+        android:id="@+id/body_zhanghao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号管理："
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginLeft="200dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_below="@+id/body_zhanghao" />
+
+
+
+    <LinearLayout
+        android:id="@+id/body_anquan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body_zhanghao"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号与安全："
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginLeft="180dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_below="@+id/body_anquan" />
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_marginTop="199dp"
+        />
+    <LinearLayout
+        android:id="@+id/body_tongzhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息与通知："
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginLeft="180dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_below="@+id/body_tongzhi" />
+
+
+    <LinearLayout
+        android:id="@+id/body_yinsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body_tongzhi"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐私设置："
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginLeft="200dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_below="@+id/body_yinsi" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_marginTop="309dp" />
+    <LinearLayout
+        android:id="@+id/body_guanyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于TeamWorld"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginLeft="160dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:layout_below="@+id/body_guanyu" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
