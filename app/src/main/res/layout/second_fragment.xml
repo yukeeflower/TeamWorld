@@ -24,14 +24,14 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/tab_menu_home"
+            android:src="@drawable/tab_menu_home"
             />
         <ImageView
             android:id="@+id/xuanshang_message_button"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:background="@drawable/home_icon_message"
+            android:src="@drawable/home_icon_message"
             android:layout_marginRight="10dp"
             android:layout_margin="5dp"
 

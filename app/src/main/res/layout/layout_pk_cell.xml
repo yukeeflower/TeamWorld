@@ -1,58 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/pk_cell_all"
+    >
     <TextView
         android:id="@+id/pk_cell_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="比赛标题语"
-        android:textSize="50dp"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
         android:textColor="#000"
         />
     <TextView
         android:id="@+id/pk_cell_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_below="@+id/pk_cell_title"
         android:text="00月00日"
-        android:textSize="20dp"
+        android:textSize="15dp"
         />
     <ImageView
         android:id="@+id/pk_cell_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/pk_cell_time"/>
     <TextView
         android:id="@+id/pk_cell_jieshao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="比赛介绍"
-        android:textSize="30dp"
-        android:layout_below="@+id/pk_cell_image"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="1dp"
-        android:layout_below="@+id/pk_cell_jieshao"
-        android:background="@color/text_gray"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="详情浏览"
-        android:layout_below="@+id/pk_cell_jieshao"
-        android:layout_marginTop="20dp"
-        android:textSize="25dp"
-            />
-    <ImageButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/my_icon_go"
-        android:layout_below="@+id/pk_cell_jieshao"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
-        />
-
-
+        android:textSize="12dp"
+        android:layout_below="@+id/pk_cell_image"
+        android:layout_margin="15dp"/>
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@+id/pk_cell_jieshao"-->
+        <!--android:background="@color/text_gray"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="详情浏览"-->
+        <!--android:gravity="start"-->
+        <!--android:background="#EEE"-->
+        <!--android:layout_below="@+id/pk_cell_jieshao"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:textSize="25dp"-->
+            <!--/>-->
+    <!--<ImageButton-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@drawable/my_icon_go"-->
+        <!--android:layout_below="@+id/pk_cell_jieshao"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--/>-->
 </RelativeLayout>

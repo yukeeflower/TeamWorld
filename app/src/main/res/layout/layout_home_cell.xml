@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="用户名"
-        android:textSize="30dp"
+        android:textSize="24dp"
         android:textColor="#000"
         android:layout_toRightOf="@+id/home_userimage"
         android:layout_margin="20dp"
@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/home_project_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         >
         <RelativeLayout
             android:layout_width="127dp"

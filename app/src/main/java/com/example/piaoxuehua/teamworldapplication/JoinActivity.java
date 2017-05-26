@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,8 +36,8 @@ public class JoinActivity extends AppCompatActivity {
                 intent.putExtra("jianjie",editText_jianjie.getText().toString());
                 intent.putExtra("username",editText_username.getText().toString());
                 sendBroadcast(intent);
-//                Intent intent1 = new Intent(JoinActivity.this,HomeActivity.class);
-//                startActivity(intent1);
+                Intent intent1 = new Intent(JoinActivity.this,HomeActivity.class);
+                startActivity(intent1);
             }
         });
 
@@ -44,6 +45,15 @@ public class JoinActivity extends AppCompatActivity {
 //        final ActionBar actionBar = getSupportActionBar();
 //        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 //        actionBar.setCustomView(R.layout.actionbar);
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent intent = new Intent(JoinActivity.this,HomeActivity.class);
+            startActivity(intent);
+        }
+        return false;
     }
 
 

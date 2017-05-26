@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowNoTitle">true</item>
+
         <!--<item name="android:windowFullscreen">true</item>-->
         <!--<item name="android:windowNoTitle">true</item>-->
     </style>
@@ -14,11 +15,21 @@
     <style name="NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
     </style>
 
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--<style name="AnimationActivity" parent="@android:style/Animation.Activity" mce_bogus="1">-->
+
+        <!--　　　　　&lt;!&ndash;进入一个Acitvity包括两部分，当前Activity退出动画，下个个Activity进入动画&ndash;&gt;-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/left_in</item>  //下个Activty进入动画-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/right_out</item> //当前Activity退出的动画-->
+
+        <!--　　　　&lt;!&ndash;跳回一个Activity也包括两部分，当前Activity摧毁动画，上个Actiivty进入动画&ndash;&gt;-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/right_in</item>  //上个Activity进入动画-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/left_oout</item>   //当前Activity退出动画-->
+
+    <!--</style>-->
 </resources>

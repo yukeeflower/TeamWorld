@@ -71,7 +71,7 @@ public class FirstFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.first_fragment, container, false);
-         myBroadcastReceiver = new FirstFragment.MyBroadcastReceiver();
+        myBroadcastReceiver = new FirstFragment.MyBroadcastReceiver();
         IntentFilter filter = new IntentFilter();
         filter.addAction("BROADCAST_ACTION");
         getActivity().registerReceiver(myBroadcastReceiver, filter);
@@ -94,25 +94,31 @@ public class FirstFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        messagebutton=(ImageButton)getActivity().findViewById(R.id.home_message);
+        messagebutton = (ImageButton) getActivity().findViewById(R.id.home_message);
         messagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(),MessageActivity.class);
+                Intent intent = new Intent(getActivity(), MessageActivity.class);
                 startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.right_in,R.anim.left_oout);
             }
         });
 
-        morebutton=(ImageButton)getActivity().findViewById(R.id.home_more);
+        morebutton = (ImageButton) getActivity().findViewById(R.id.home_more);
         morebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(),MyActivity.class);
+                Intent intent = new Intent(getActivity(), MyActivity.class);
                 startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.left_in,R.anim.right_out);
             }
         });
+        initData();
+    }
+
+    public void initData() {
         List<Map<String, Object>> list = new ArrayList<>();
-        for (int i = modelList.size()-1; i >-1; i--) {
+        for (int i = modelList.size() - 1; i > -1; i--) {
             Map<String, Object> map = new HashMap<>();
             map.put("logo", modelList.get(i).getImage());
             map.put("name", modelList.get(i).getName());
@@ -162,9 +168,8 @@ public class FirstFragment extends Fragment {
             model.setName(username);
             model.setSeximage(seximages[0]);
             modelList.add(model);
-
-            for (Model model1 :modelList){
-                Log.d(TAG,model1.toString());
+            for (Model model1 : modelList) {
+                Log.d(TAG, model1.toString());
             }
 
         }

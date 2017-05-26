@@ -35,6 +35,7 @@ public class ThirdFragment extends Fragment {
         return view;
 
     }
+    public ThirdFragment(){}
 
     @Override
     public void onStart() {

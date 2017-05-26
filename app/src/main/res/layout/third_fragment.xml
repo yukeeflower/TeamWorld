@@ -1,162 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_rela_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="#eeffffff"
+    android:clickable="true">
 
     <TextView
         android:id="@+id/more_text_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="日"
-        android:textSize="80dp"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:textSize="80dp" />
 
     <TextView
         android:id="@+id/more_text_xingqi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
         android:layout_toRightOf="@+id/more_text_day"
         android:text="星期几"
         android:textColor="#000"
         android:textSize="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
 
         />
 
     <TextView
+        android:id="@+id/more_text_yearandmonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/more_text_xingqi"
+        android:layout_marginLeft="90dp"
         android:text="月/年"
         android:textColor="#000"
-        android:textSize="30dp"
-        android:layout_marginLeft="90dp"
-        />
+        android:textSize="30dp" />
 
-    <ImageButton
-        android:id="@+id/more_zudui"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/more_logo_zudui"
-        android:layout_marginTop="150dp"
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/more_rela_zudui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        />
-    <TextView
+        android:layout_marginTop="220dp">
 
+        <ImageView
+            android:id="@+id/more_zudui"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/more_logo_zudui" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/more_zudui"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="组队"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/more_rela_luntan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="组队"
-        android:layout_below="@+id/more_zudui"
-        android:textSize="30dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#000"
-        />
-    <ImageView
-        android:id="@+id/more_luntan"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/more_logo_luntan"
-        android:layout_toRightOf="@+id/more_zudui"
-        android:layout_marginTop="150dp"
+        android:layout_alignTop="@+id/more_rela_zudui"
+        android:layout_toRightOf="@+id/more_rela_zudui">
+
+        <ImageView
+            android:id="@+id/more_luntan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/more_logo_luntan" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:text="论坛"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/more_rela_bisai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        />
-    <TextView
+        android:layout_alignTop="@+id/more_rela_zudui"
+        android:layout_toRightOf="@id/more_rela_luntan">
 
+        <ImageView
+            android:id="@+id/more_bisai"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/more_logo_bisai" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:text="比赛"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/more_rela_shoucang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="论坛"
-        android:textSize="30dp"
-        android:layout_marginTop="220dp"
-        android:layout_toRightOf="@+id/more_zudui"
-        android:layout_marginLeft="50dp"
-        android:textColor="#000"
-        />
-    <ImageView
-        android:id="@+id/more_bisai"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/more_logo_bisai"
-        android:layout_toRightOf="@+id/more_luntan"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="40dp"/>
-    <TextView
+        android:layout_below="@+id/more_rela_zudui"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@id/more_rela_zudui">
 
+        <ImageView
+            android:id="@+id/more_shoucang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/more_logo_shoucang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/more_shoucang"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="收藏"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/more_rela_my"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="比赛"
-        android:layout_toRightOf="@+id/more_luntan"
-        android:textSize="30dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="220dp"
-        android:textColor="#000"
-        />
-    <ImageView
-        android:id="@+id/more_shoucang"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/more_logo_shoucang"
-        android:layout_marginTop="280dp"
-        android:layout_marginLeft="30dp"/>
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="收藏"
-        android:layout_below="@+id/more_shoucang"
-        android:textSize="30dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#000"
-        />
-    <ImageView
-        android:id="@+id/more_my"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/more_logo_my"
-        android:layout_marginTop="280dp"
         android:layout_marginLeft="40dp"
-        android:layout_toRightOf="@id/more_shoucang"/>
-    <TextView
+        android:layout_alignTop="@+id/more_rela_shoucang"
+        android:layout_toRightOf="@id/more_rela_shoucang">
 
+        <ImageView
+            android:id="@+id/more_my"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/more_logo_my" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/more_my"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="我的"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/more_rela_more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="我的"
-        android:layout_below="@+id/more_my"
-        android:textSize="30dp"
-        android:layout_marginLeft="138dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#000"
-        />
-    <ImageView
-        android:id="@+id/more_more"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/more_logo_more"
-        android:layout_marginTop="280dp"
         android:layout_marginLeft="40dp"
-        android:layout_toRightOf="@id/more_my"/>
-    <TextView
+        android:layout_alignTop="@+id/more_rela_shoucang"
+        android:layout_toRightOf="@id/more_rela_my">
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="更多"
-        android:layout_below="@+id/more_more"
-        android:textSize="30dp"
-        android:layout_marginLeft="238dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#000"
-        />
+        <ImageView
+            android:id="@+id/more_more"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/more_logo_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/more_more"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="更多"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
     <ImageView
+        android:id="@+id/more_img_close"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/icon_close"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
         android:layout_centerInParent="true"
-        />
-
-
-
+        android:src="@drawable/ic_bottom_more_icon2" />
 </RelativeLayout>
