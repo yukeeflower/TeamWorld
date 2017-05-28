@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shequ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.piaoxuehua.teamworldapplication.ShequActivity">
+
+    <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:id="@+id/tab_title"
+              android:background="#fff"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/txt_top"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_marginTop="5dp"
+                  android:textSize="30dp"
+                  android:textColor="@color/text_gray"
+                  android:text= "社区" />
+              <ImageView
+                  android:id="@+id/shequ_home_button"
+                  android:layout_width="40dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:src="@drawable/tab_menu_home"
+                  />
+              <ImageView
+                  android:id="@+id/shequ_message_button"
+                  android:layout_width="40dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:src="@drawable/home_icon_message"
+                  android:layout_marginRight="10dp"
+                  android:layout_margin="5dp"
+
+                  />
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="2px"
+                  android:background="@color/text_gray"
+                  android:layout_alignParentBottom="true"/>
+          </RelativeLayout>
+
+
+          <LinearLayout
+              android:id="@+id/body_button"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tab_title"
+              android:background="@color/text_gray">
+              <ImageView
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent" />
+              <Button
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="热门资讯"
+                  android:background="#fff"
+                  />
+              <ImageView
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent" />
+              <Button
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="好友圈"
+                  android:background="#fff"/>
+              <ImageView
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent" />
+
+          </LinearLayout>
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_below="@+id/body_button"
+              android:background="@color/text_gray"
+              />
+
+
+          <LinearLayout
+              android:id="@+id/label_search"
+              android:background="#D4D4D4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_below="@+id/body_button"
+              >
+
+              <FrameLayout
+
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content">
+
+                  <EditText
+                      android:id="@+id/search_et_input"
+                      android:layout_gravity="center_vertical"
+                      android:layout_margin="10dp"
+                      android:drawableLeft="@drawable/direct_search"
+                      android:drawablePadding="5dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="30dp"
+                      android:background="@drawable/direct_search_shape"
+                      android:textSize="16sp"
+                      android:imeOptions="actionSearch"
+                      android:inputType="text"
+                      android:hint="搜索"
+                      />
+                  <ImageView
+                      android:visibility="gone"
+                      android:layout_marginRight="20dp"
+                      android:src="@drawable/direct_search_clear_normal"
+                      android:id="@+id/search_iv_delete"
+                      android:layout_gravity="right|center_vertical"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+              </FrameLayout>
+          </LinearLayout>
+
+
+          <ListView
+              android:id="@+id/shequ_listview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/label_search"
+              >
+
+          </ListView>
+
+
+</RelativeLayout>
+
+

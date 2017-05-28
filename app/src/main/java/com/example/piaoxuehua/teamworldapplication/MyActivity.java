@@ -20,9 +20,9 @@ public class MyActivity extends AppCompatActivity {
         setbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent=new Intent(MyActivity.this,My_shezhiActivity.class);
-//                startActivity(intent);
-                finish();
+                Intent intent=new Intent(MyActivity.this,My_shezhiActivity.class);
+                startActivity(intent);
+//                finish();
             }
         });
 

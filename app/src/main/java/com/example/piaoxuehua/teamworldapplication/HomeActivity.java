@@ -60,7 +60,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
                         @Override
                         public void onClick(View v) {
-                            Toast.makeText(HomeActivity.this, "论坛被点击啦", Toast.LENGTH_LONG).show();
+                            Intent intent =new Intent(HomeActivity.this,ShequActivity.class);
+                            startActivity(intent);
+                            pDialog.hide();
                         }
                     });
                     pDialog.setBiBtnClickListener(new View.OnClickListener() {

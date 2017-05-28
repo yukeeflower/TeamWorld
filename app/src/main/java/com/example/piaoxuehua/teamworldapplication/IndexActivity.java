@@ -12,7 +12,7 @@ public class IndexActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
         Handler x = new Handler();
-        x.postDelayed(new splashhandler(), 2000);
+        x.postDelayed(new splashhandler(), 5000);
     }
     class splashhandler implements Runnable{
         public void run() {

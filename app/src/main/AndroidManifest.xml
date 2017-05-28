@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.piaoxuehua.teamworldapplication">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,13 +24,14 @@
         <activity android:name=".DemoActivity" />
         <activity
             android:name=".HomeActivity"
-            android:launchMode="singleInstance"></activity>
+            android:launchMode="singleInstance" />
         <!-- <activity android:name=".FirstFragment" /> -->
         <activity android:name=".JoinActivity" />
         <activity android:name=".MyActivity" />
         <activity android:name=".My_shezhiActivity" />
         <activity android:name=".MessageActivity" />
-        <activity android:name=".DetailInfoActivity"></activity>
+        <activity android:name=".DetailInfoActivity" />
+        <activity android:name=".ShequActivity"></activity>
     </application>
 
 </manifest>
